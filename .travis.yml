@@ -6,5 +6,7 @@ deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app: cs50w-final
-  run: python manage.py migrate
+  run: 
+    - python manage.py migrate
+    - heroku ps:scale web=1
   on: web50/projects/2019/x/final
