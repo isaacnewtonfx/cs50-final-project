@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '79m_ux2jm!r@_7a5vp3i6^%eex4am!em-(-h-a6s)(5^zstsx('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # WARNING: Specify frontend assets serving mode. Don't run with WEBPACK_HMR turned on in production!
 WEBPACK_HMR = False
