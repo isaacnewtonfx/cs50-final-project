@@ -8,6 +8,5 @@ deploy:
   app: cs50w-final
   run: 
     - python manage.py migrate
-    - python manage.py collectstatic
     - heroku ps:scale web=1
   on: web50/projects/2019/x/final

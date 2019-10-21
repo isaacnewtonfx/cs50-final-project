@@ -131,7 +131,7 @@ USE_TZ = True
 
 # Media is for any user upload files(img,pdf,videos etc)
 MEDIA_URL = '/media/'
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'media_root')
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'mediafiles')
 
 
 # Static files (CSS, JavaScript, Images)
@@ -139,7 +139,7 @@ MEDIA_ROOT =  os.path.join(BASE_DIR, 'media_root')
 
 #STATIC_URL = 'https://storage.googleapis.com/enhanced-rite-200319/static/'
 STATIC_URL = '/static/'
-STATIC_ROOT =  os.path.join(BASE_DIR, 'static_root')
+STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles')
 
 #staticfiles_dirs is additional directories to search for static files
 STATICFILES_DIRS = (

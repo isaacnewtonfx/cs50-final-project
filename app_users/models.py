@@ -46,13 +46,13 @@ class UserProfile(models.Model):
 			resizedImage = image.resize((200, 200), Image.ANTIALIAS)
 			resizedImage.save(self.photo.path)
 			sourcepath = self.photo.path
-			destination_path = os.path.join(settings.BASE_DIR, 'media_root') + "/" + self.photo.name
+			destination_path = os.path.join(settings.BASE_DIR, 'mediafiles') + "/" + self.photo.name
 			print(destination_path)
 			shutil.move(sourcepath, destination_path)
 
 			# now delete old user photo from the userphotos directory if only its not the default photo
 			if self.old_photo_filename != "" and self.old_photo_filename != "default.jpg" and self.old_photo_filename is not None:
-				filepath = os.path.join(settings.BASE_DIR, 'media_root') + "/" + self.old_photo_filename
+				filepath = os.path.join(settings.BASE_DIR, 'mediafiles') + "/" + self.old_photo_filename
 				if( exists(filepath) ):
 					os.remove(filepath)
 
