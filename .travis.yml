@@ -7,4 +7,4 @@ deploy:
   api_key: $HEROKU_API_KEY
   app: cs50w-final
   run: python manage.py migrate
-  on: master
+  on: web50/projects/2019/x/final
