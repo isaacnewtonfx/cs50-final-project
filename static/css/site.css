@@ -1,4 +1,8 @@
-﻿hr{
+﻿body{
+    position:absolute;
+}
+
+hr{
     border:2px solid #e6e6ed;
 }
 
@@ -61,3 +65,12 @@
     margin-top:60px;
 }
 /*End of All pages margin top*/
+
+
+
+/* Reset the body position (500px and up) */
+@media (min-width: 500px) {
+    body{
+        position: static;
+    }
+}

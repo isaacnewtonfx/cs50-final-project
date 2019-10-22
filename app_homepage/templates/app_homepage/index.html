@@ -30,26 +30,21 @@
         {% include "layout/error_msg.html" %}
     {% endif %}
 
-    <!--hide on large screens-->
-    <div class="visible-xs">
+    <div>
         <div style="margin-top: 20px" class="jumbotron">
             <h1>Welcome to Phonebook</h1>
             <p>Your online phonebook available 24/7</p>
         </div>
-
-        <h4>Features</h4>
-        <ul>
-            <li>Create new contacts</li>
-            <li>Update existing contacts</li>
-            <li>Delete contacts </li>
-            <li>PDF Report</li>
-        </ul>
     </div>
 
 
     <!-- Main component for a marketing and ads / hide on mobile phones-->
-    <div style="text-align: center;">
+    <div style="text-align: center;" class="hidden-xs">
         <img src="{% static 'img/bg.jpg' %}" height="400px" />
+    </div>
+
+    <div style="text-align: center;" class="visible-xs">
+        <img src="{% static 'img/bg.jpg' %}" width="400px" />
     </div>
 
 
