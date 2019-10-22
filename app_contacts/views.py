@@ -142,7 +142,7 @@ def ReportView(request):
 	template = get_template('app_contacts/rptAllContacts.html')
 	html  = template.render(data)
 
-	file = default_storage.open(os.path.join(settings.MEDIA_ROOT, 'files/report.pdf'), 'w+b')
+	file = default_storage.open(os.path.join(settings.MEDIA_ROOT, 'report.pdf'), 'w+b')
 	pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file,encoding='utf-8')
 
 	file.seek(0)
