@@ -50,4 +50,4 @@ HOW TO RUN THE APP
 
 2. Install the packages available in requiremnts.txt
 
-3. Run the application by using the following command: $ python3 application.py
+3. Run the application by using the following command: $ python3 manage.py runserver
