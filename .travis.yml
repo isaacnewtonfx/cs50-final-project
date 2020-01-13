@@ -9,4 +9,4 @@ deploy:
   run: 
     - python manage.py migrate
     - heroku ps:scale web=1
-  on: web50/projects/2019/x/final
+  on: master
