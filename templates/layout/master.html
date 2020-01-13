@@ -87,35 +87,6 @@
 			</div>
 		</section>
 
-		<!--popover content-->
-		<div class="row" id="AccountPopoverContent">
-				<div class="row">
-					<div id="main-photo-div" class="col-sm-4">
-
-						{% if unique_photo_filename %}
-							<img alt="No Photo" id="acctphoto" class="img-responsive" 
-							src="{% static "img/uploads/%s" % {{unique_photo_filename}} %}">
-						{% else %}
-							<img alt="No Photo" id="acctphoto" class="img-responsive" 
-							src="{% static "app_users/img/usericon.svg" %}">	
-						{% endif %}
-
-					</div>
-
-					<br class="hidden-lg" />
-					<div id="my-account-div" class="col-sm-10 col-md-10 col-lg-5">
-						<p> <b>{{username}}</b></p>
-						<p>{{email}}</p>
-						<a href="">My Account</a>
-	
-					</div>
-				</div>
-
-				<div>
-					<a class="btn btn-sm btn-warning logout-btn" href=""><span class="glyphicon glyphicon-user"></span> Logout</a>
-				</div>
-		</div>
-
 	<!--For responsive testing purposes-->
 <!--	<div class="visible-xs"> now in xs</div>-->
 <!--	<div class="visible-sm"> now in sm</div>-->
